@@ -1,0 +1,95 @@
+/* ---------------Inicio--------------- */
+
+body{
+  background-color: rgb(117, 111, 111);
+  color: white;
+}
+
+/* Barra de Navegación */
+
+header{
+  background-color: rgba(0,0,0,0.5);
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  padding: 0px 20px;
+  font-weight: bold;
+}
+header a:hover{
+  color: grey;
+}
+
+header nav{
+  justify-content: flex-end;
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: black;
+
+  background-image:
+  url(https://d22fxaf9t8d39k.cloudfront.net/0ca20842ef3701f5e6dfc4975a33eac6c041c0cb4161d76df16268ca9b2af6c526737.jpeg);
+
+  background-size: cover;
+  background-position: center center;
+}
+
+#galeria{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width:950px){
+  #galeria{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#galeria img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#como-personalizar{
+  background-image: url("https://images.pexels.com/photos/706498/pexels-photo-706498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  padding: 100px 10%;
+}
+
+#como-personalizar div h2{
+  font-size: 3.5em;
+}
+
+@media (max-width:750px){
+    #como-personalizar{
+      flex-direction: column-reverse;
+    }
+}
+
+#como-personalizar div{
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  color: white;
+}
+
+#como-personalizar img{
+  border-radius: 50px;
+  min-width: 300px;
+  max-width: 800px;
+}
+
