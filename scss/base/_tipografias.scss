@@ -1,0 +1,10 @@
+/* Tipografias */
+
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap";
+
+$font-family_1: 'Open Sans', sans-serif;
+
+
+* {
+	font-family: $font-family_1;
+}
