@@ -1,7 +1,12 @@
+/* ---------------Inicio--------------- */
+
 body {
 	background-color: $background-color_1;
 	color: $color_1;
 }
+
+/* -----Barra de Navegación----- */
+
 header {
 	background-color: $background-color_2;
 	a {
@@ -17,6 +22,9 @@ header {
 		justify-content: flex-end;
 	}
 }
+
+/* -----Banner----- */
+
 .banner {
 	display: flex;
 	align-items: center;
@@ -47,6 +55,9 @@ header {
 	background-size: cover;
 	background-position: center center;
 }
+
+/* -----Galeria----- */
+
 #galeria {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -57,8 +68,17 @@ header {
 		display: block;
 		width: 100%;
 		height: 100%;
+		transition: all .3s;
+	}
+	img:hover{
+		transform: scale(0.9);
+    	transition: all .3s;
+    	opacity: 0.7;  
 	}
 }
+
+/* -----Como Personalizar----- */
+
 #como-personalizar {
 	background-image: url("https://images.pexels.com/photos/706498/pexels-photo-706498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 	background-position-x: center;
@@ -82,6 +102,9 @@ header {
 		max-width: 800px;
 	}
 }
+
+/* -----Footer----- */
+
 .pie-pagina {
 	width: 100%;
 	background-color: $background-color_3;
@@ -132,6 +155,9 @@ header {
 		}
 	}
 }
+
+/* -----Contactanos----- */
+
 .container-form {
 	width: 100%;
 	max-width: 1100px;

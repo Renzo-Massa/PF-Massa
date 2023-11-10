@@ -1,37 +1,40 @@
-/* Tipografias */
-
+@charset "UTF-8";
+/* -----Tipografias----- */
 @import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap";
 * {
   font-family: "Open Sans", sans-serif;
 }
 
+/* ---------------Inicio--------------- */
 body {
   background-color: rgb(117, 111, 111);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
+/* -----Barra de Navegación----- */
 header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 header a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 0px 20px;
   font-weight: bold;
 }
 header a:hover {
-  color: grey;
+  color: rgb(128, 128, 128);
 }
 header nav {
   justify-content: flex-end;
 }
 
+/* -----Banner----- */
 .banner {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  color: black;
+  color: rgb(0, 0, 0);
   background-image: url(https://d22fxaf9t8d39k.cloudfront.net/0ca20842ef3701f5e6dfc4975a33eac6c041c0cb4161d76df16268ca9b2af6c526737.jpeg);
   background-size: cover;
   background-position: center center;
@@ -42,7 +45,7 @@ header nav {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  color: black;
+  color: rgb(0, 0, 0);
   background-image: url(https://images.pexels.com/photos/15852633/pexels-photo-15852633/free-photo-of-gente-mujer-hombres-parque.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
   background-position: center center;
@@ -53,12 +56,13 @@ header nav {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  color: black;
+  color: rgb(0, 0, 0);
   background-image: url(https://d22fxaf9t8d39k.cloudfront.net/b6121b7e9ea332027a0dd6a9200b9813a4f73dcd2e7f151b21c880fac797bb6019762.jpg);
   background-size: cover;
   background-position: center center;
 }
 
+/* -----Galeria----- */
 #galeria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -70,8 +74,15 @@ header nav {
   display: block;
   width: 100%;
   height: 100%;
+  transition: all 0.3s;
+}
+#galeria img:hover {
+  transform: scale(0.9);
+  transition: all 0.3s;
+  opacity: 0.7;
 }
 
+/* -----Como Personalizar----- */
 #como-personalizar {
   background-image: url("https://images.pexels.com/photos/706498/pexels-photo-706498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position-x: center;
@@ -85,7 +96,7 @@ header nav {
   display: flex;
   flex-direction: column;
   padding-right: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 #como-personalizar div h2 {
   font-size: 3.5em;
@@ -96,6 +107,7 @@ header nav {
   max-width: 800px;
 }
 
+/* -----Footer----- */
 .pie-pagina {
   width: 100%;
   background-color: rgb(61, 19, 19);
@@ -110,12 +122,12 @@ header nav {
   padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .box h2 {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 25px;
   font-size: 20px;
 }
 .pie-pagina .grupo-1 .box p {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 10px;
 }
 .pie-pagina .grupo-1 .red-social a {
@@ -124,25 +136,26 @@ header nav {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-right: 10px;
   background-color: rgb(107, 38, 38);
   text-align: center;
   transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover {
-  color: grey;
+  color: rgb(128, 128, 128);
 }
 .pie-pagina .grupo-2 {
   background-color: rgb(107, 38, 38);
   padding: 15px 10px;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
 
+/* -----Contactanos----- */
 .container-form {
   width: 100%;
   max-width: 1100px;
@@ -167,11 +180,11 @@ header nav {
   text-decoration: none;
   width: 100%;
   margin-bottom: 15px;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: 700;
 }
 .container-form a i {
-  color: orange;
+  color: rgb(255, 165, 0);
   margin-right: 10px;
 }
 .container-form form .campo {
@@ -195,7 +208,7 @@ header nav {
   border: none;
   outline: 0px;
   background: orange;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 3px;
   cursor: pointer;
   transition: all 300ms ease;
