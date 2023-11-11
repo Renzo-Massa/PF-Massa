@@ -107,6 +107,30 @@ header nav {
   max-width: 800px;
 }
 
+/* -----Quienes Somos?-----*/
+#nosotros .container-nosotros {
+  text-align: center;
+  padding: 50px 12px;
+  display: flex;
+  justify-content: center;
+}
+#nosotros .texto-nosotros {
+  width: 50%;
+  text-align: initial;
+  padding: 0px 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#nosotros .imagen-nosotros {
+  background-image: url("https://fotos.perfil.com/2019/11/27/trim/1280/720/bebiendo-mate-20191127-809602.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  width: 500px;
+}
+
 /* -----Footer----- */
 .pie-pagina {
   width: 100%;
@@ -122,12 +146,12 @@ header nav {
   padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .box h2 {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 200, 71);
   margin-bottom: 25px;
   font-size: 20px;
 }
 .pie-pagina .grupo-1 .box p {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 200, 71);
   margin-bottom: 10px;
 }
 .pie-pagina .grupo-1 .red-social a {
@@ -136,7 +160,7 @@ header nav {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 200, 71);
   margin-right: 10px;
   background-color: rgb(107, 38, 38);
   text-align: center;
@@ -149,7 +173,7 @@ header nav {
   background-color: rgb(107, 38, 38);
   padding: 15px 10px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 200, 71);
 }
 .pie-pagina .grupo-2 small {
   font-size: 15px;
@@ -227,6 +251,7 @@ textarea {
   outline: 0px;
 }
 
+/* -----Media Queries----- */
 @media (max-width: 950px) {
   #galeria {
     grid-template-columns: 1fr 1fr;

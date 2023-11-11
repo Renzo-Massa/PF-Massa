@@ -103,6 +103,33 @@ header {
 	}
 }
 
+/* -----Quienes Somos?-----*/
+
+#nosotros {
+	.container-nosotros {
+		text-align: center;
+		padding: 50px 12px;
+		display: flex;
+		justify-content: center;
+	}
+	.texto-nosotros {
+		width: 50%;
+		text-align: initial;
+		padding: 0px 30px;
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.imagen-nosotros {
+		background-image: url("https://fotos.perfil.com/2019/11/27/trim/1280/720/bebiendo-mate-20191127-809602.jpg");
+		background-size: cover;
+		background-position: center center;
+		height: 400px;
+		width: 500px;
+	}
+}
+
 /* -----Footer----- */
 
 .pie-pagina {
@@ -118,12 +145,12 @@ header {
 		padding: 45px 0px;
 		.box {
 			h2 {
-				color: $color_1;
+				color: $color_5;
 				margin-bottom: 25px;
 				font-size: 20px;
 			}
 			p {
-				color: $color_1;
+				color: $color_5;
 				margin-bottom: 10px;
 			}
 		}
@@ -134,7 +161,7 @@ header {
 				width: 45px;
 				height: 45px;
 				line-height: 45px;
-				color: $color_1;
+				color: $color_5;
 				margin-right: 10px;
 				background-color: $background-color_4;
 				text-align: center;
@@ -149,7 +176,7 @@ header {
 		background-color: $background-color_4;
 		padding: 15px 10px;
 		text-align: center;
-		color: $color_1;
+		color: $color_5;
 		small {
 			font-size: 15px;
 		}
@@ -229,6 +256,9 @@ textarea {
 	border-radius: 3px;
 	outline: 0px;
 }
+
+/* -----Media Queries----- */
+
 @media (max-width:950px) {
 	#galeria {
 		grid-template-columns: 1fr 1fr;
